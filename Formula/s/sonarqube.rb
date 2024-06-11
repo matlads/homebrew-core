@@ -47,8 +47,8 @@ class Sonarqube < Formula
     (var/"sonarqube/logs").mkpath
     unless (pkgetc/"sonar.properties").exists?
       pkgetc.mkpath
-      mv libexec/"conf/sonar.properties" pkgetc/"sonar.properties"
-      ln_s libexec/"conf/sonar.properties" pkgetc/"sonar.properties"
+      mv libexec/"conf/sonar.properties", pkgetc/"sonar.properties"
+      ln_s libexec/"conf/sonar.properties", pkgetc/"sonar.properties"
     end
   end
 
